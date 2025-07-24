@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/keyboard_view_top_rl"
+        android:layout_width="match_parent"
+        android:background="#222222"
+        android:visibility="visible"
+        android:layout_height="38dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:textColor="#8C8C8C"
+            android:gravity="center"
+            android:text="@string/keyboard_title"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/iv_close"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textColor="#0762EC"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="@string/keyboard_complete"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#565656"/>
+    <RelativeLayout
+        android:background="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!-- 普通数字键盘样式 -->
+        <com.android.desert.fullkeyboard.ClassicalKeyBoardView
+            android:id="@+id/keyboard_view"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/btn_keyboard_key"
+            android:keyTextColor="#FFFFFF"
+            android:keyTextSize="28dp"
+            android:labelTextSize="20dp"
+            android:keyPreviewOffset="-3dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="0.0"
+            android:visibility="gone" />
+        <!-- 字母键盘样式 -->
+        <com.android.desert.fullkeyboard.ClassicalKeyBoardView
+            android:id="@+id/keyboard_view_abc_sym"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/btn_keyboard_abc_key"
+            android:keyTextColor="#FFFFFF"
+            android:keyTextSize="23sp"
+            android:keyPreviewLayout="@layout/keyboardd_preview"
+            android:keyPreviewHeight="60dp"
+            android:keyPreviewOffset="-3dp"
+            android:labelTextSize="15dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="0.0"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

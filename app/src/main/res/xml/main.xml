@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:title="full"
+        app:key="full"
+        app:icon="@mipmap/keyboard"
+        app:summary="Customizable full keyboard">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.desert.android.appfullkeyboard.FullKeyboardActivity"
+            android:targetPackage="com.desert.android.appfullkeyboard"/>
+    </Preference>
+</androidx.preference.PreferenceScreen>

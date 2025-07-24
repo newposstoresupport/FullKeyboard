@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/views_fullkeyboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_view"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sv_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/all_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/normal_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="System Keyboard" />
+
+                <EditText
+                    android:id="@+id/special_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Classical Keyboard"/>
+
+                <TextView
+                    android:id="@+id/other_test"
+                    android:layout_width="match_parent"
+                    android:text="Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors."
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

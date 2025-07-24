@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/num_key_abc_background"/>
+    <item android:drawable="@drawable/alphabetickey_cap"
+        android:bottom="10dp"
+        android:top="10dp"
+        android:left="13dp"
+        android:right="13dp"/>
+
+</layer-list>
